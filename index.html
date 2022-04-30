@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <!--  -->
+    <title>Gabriana Party</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      #poopdotbike {
+        background-image: url('gabriana.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+      }
+
+      #text {
+        font-size: 50px;
+        font-family: Comic Sans MS, Comic Sans, Comic Fucking Sans, cursive;
+        color: #ff69b4;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        -webkit-animation: riiide 15s infinite linear;
+        -moz-animation: riiide 15s infinite linear;
+        -o-animation: riiide 15s infinite linear;
+        -ms-animation: riiide 15s infinite linear;
+        animation: riiide 15s infinite linear;
+      }
+
+      @-webkit-keyframes riiide {
+        0% { -webkit-transform: rotateZ(0deg);
+             -webkit-filter: hue-rotate(0deg); }
+        100% { -webkit-transform: rotateZ(360deg);
+               -webkit-filter: hue-rotate(360deg); }
+      }
+      @-moz-keyframes riiide {
+        0% { -moz-transform: rotateZ(0deg);
+             -moz-filter: hue-rotate(0deg); }
+        100% { -moz-transform: rotateZ(360deg);
+               -moz-filter: hue-rotate(360deg); }
+      }
+      @-o-keyframes riiide {
+        0% { -o-transform: rotateZ(0deg);
+             -o-filter: hue-rotate(0deg); }
+        100% { -o-transform: rotateZ(360deg);
+               -o-filter: hue-rotate(360deg); }
+      }
+      @-ms-keyframes riiide {
+        0% { -ms-transform: rotateZ(0deg);
+             -ms-filter: hue-rotate(0deg); }
+        100% { -ms-transform: rotateZ(360deg);
+               -ms-filter: hue-rotate(360deg); }
+      }
+      @keyframes riiide {
+        0% { transform: rotateZ(0deg);
+             filter: hue-rotate(0deg); }
+        100% { transform: rotateZ(360deg);
+               filter: hue-rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.youtube.com/watch?v=HMUDVMiITOU" id="text" style="top: 258.5px;">
+      Congradulations Gabe and Ariana!!!!!!!!!!!!!
+    </a>
+    <div id="poopdotbike"></div>
+  
+  <script type="text/javascript">
+    var obj = document.getElementById('text');
+    var positionText = function () {
+      obj.style.top = ((window.innerHeight / 2) - 25) + 'px';
+    }
+
+    window.onresize = positionText;
+    positionText();
+  </script>
+
+</body></html>
